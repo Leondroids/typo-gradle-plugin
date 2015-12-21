@@ -1,0 +1,17 @@
+package com.leondroid
+
+
+import org.junit.Test
+import org.gradle.testfixtures.ProjectBuilder
+import org.gradle.api.Project
+import static org.junit.Assert.*
+
+class TypoPluginTest {
+
+    @Test
+    public void projectIsBuild() {
+        Project project = ProjectBuilder.builder.build()
+        project.pluginManager.apply 'com.leondroid.typo-gradle-plugin'
+        assertTrue(false)
+    }
+}

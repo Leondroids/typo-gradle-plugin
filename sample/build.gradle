@@ -1,0 +1,27 @@
+group 'com.leondroid'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath group: 'com.leondroid', name: 'typo-gradle-plugin', version: '0.1'
+    }
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+
+apply plugin: 'com.leondroid.typo'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
